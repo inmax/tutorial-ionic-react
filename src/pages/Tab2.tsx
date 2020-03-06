@@ -22,7 +22,7 @@ const Tab2: React.FC = () => {
           <IonRow>
             {photos.map((photo, index) => (
               <IonCol size="6" key={index}>
-                <IonImg src={photo.webviewPath} />
+              <IonImg src={photo.base64 ?? photo.webviewPath} />
               </IonCol>
             ))}
           </IonRow>
